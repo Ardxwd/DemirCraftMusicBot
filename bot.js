@@ -7,7 +7,7 @@ const { prefix } = require('./config.json');
 const nodes = [
     {
         host: "lava.inzeworld.com",
-        port: 3128, 
+        port:  3128, 
         password: "saher.inzeworld.com", 
          secure: false
       },
@@ -278,7 +278,7 @@ client.riffy.on("trackStart", async (player, track) => {
         .setColor("#FF7A00")
 
         .setAuthor({
-            name: 'Currently playing a Track',
+            name: 'Şu anda bu parça çalıyor',
             iconURL: 'https://cdn.discordapp.com/attachments/1140841446228897932/1144671132948103208/giphy.gif', 
             url: 'https://discord.gg/xQF9f9yUEM'
           })
@@ -296,7 +296,6 @@ client.riffy.on("queueEnd", async (player) => {
     if (autoplay) {
         player.autoplay(player)
     } else {
-        player.destroy();
         const embed = new EmbedBuilder()
         .setColor('#ffff00')
         .setAuthor({
@@ -304,8 +303,6 @@ client.riffy.on("queueEnd", async (player) => {
           iconURL: 'https://cdn.discordapp.com/attachments/1230824451990622299/1230824519220985896/6280-2.gif?ex=6641e8a8&is=66409728&hm=149efc9db2a92eb90c70f0a6fb15618a5b912b528f6b1dcf1b517c77a72a733a&',
           url: 'https://discord.gg/xQF9f9yUEM'
         })
-          .setDescription('**Bye Bye!, No more songs to play...**');
-          channel.send({ embeds: [embed] });
       
     }
 });
