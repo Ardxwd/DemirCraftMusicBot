@@ -6,9 +6,9 @@ const { Classic } = require("musicard");
 const { prefix } = require('./config.json');
 const nodes = [
     {
-        host: "lava.inzeworld.com",
-        port:  3128, 
-        password: "saher.inzeworld.com", 
+        host: "46.202.82.164",
+        port:  1027, 
+        password: "jmlitelavalink", 
          secure: false
       },
 ];
