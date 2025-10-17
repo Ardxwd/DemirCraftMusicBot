@@ -6,9 +6,9 @@ const { Classic } = require("musicard");
 const { prefix } = require('./config.json');
 const nodes = [
     {
-        host: "37.114.42.191",
-        port: 9906, 
-        password: "danteisnttaken", 
+        host: " lavalink.jirayu.net",
+        port: 13592, 
+        password: "youshallnotpass", 
          secure: false
       },
 ];
@@ -314,3 +314,4 @@ client.riffy.on("queueEnd", async (player) => {
 client.on("raw", (d) => {
     client.riffy.updateVoiceState(d);
 });
+
