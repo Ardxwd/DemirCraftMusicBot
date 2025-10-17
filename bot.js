@@ -6,9 +6,9 @@ const { Classic } = require("musicard");
 const { prefix } = require('./config.json');
 const nodes = [
     {
-        host: "173.249.0.115",
-        port:  13592, 
-        password: "https://camming.xyz", 
+        host: "lava-v4.ajieblogs.eu.org",
+        port:  80, 
+        password: "https://dsc.gg/ajidevserver", 
          secure: false
       },
 ];
