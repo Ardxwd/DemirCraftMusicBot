@@ -6,9 +6,9 @@ const { Classic } = require("musicard");
 const { prefix } = require('./config.json');
 const nodes = [
     {
-        host: "lavalink.jirayu.net",
+        host: "173.249.0.115",
         port:  13592, 
-        password: "youshallnotpass", 
+        password: "https://camming.xyz", 
          secure: false
       },
 ];
